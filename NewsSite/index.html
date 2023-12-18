@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container container flex">
+            <a href="#" onclick="reload()" class="image-container">
+                <img src="/assests/logo.png" alt="">
+            </a>
+            <div class="nav-links-container">
+                <ul class="flex">
+                    <li class="hover-links nav-items" id="Ipl" onclick="navItemClick('Ipl')">IPL</li>
+                    <li class="hover-links nav-items" id="Finance" onclick="navItemClick('Finance')">Finance</li>
+                    <li class="hover-links nav-items" id="Politics" onclick="navItemClick('Politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-container">
+                <input type="text" name="" id="search-input" placeholder="e.g. Science" class="input-search">
+                <button class="button-search" id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card flex">
+            <div class="card-image-container">
+                <img src="https://placehold.co/350x200" alt="" id="news-image">
+            </div>
+            <div class="card-info-container flex">
+                <h3 id="news-heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia reprehenderit repellendus dolorem ipsa beatae voluptatibus?</h3>
+                <h6 id="news-time">Lorem ipsum dolor sit amet.</h6>
+                <p id="news-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, natus aliquam. Omnis minus minima ullam optio nisi fugiat quos dolore?</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
