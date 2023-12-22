@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatherio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="inner-container flex">
+            <div class="search-container flex">
+                <input type="text" placeholder="Enter City Name" id="city-input">
+                <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="error-msg">
+                <p>Invalid City Name</p>
+            </div>
+            <div class="main-container grid">
+                <div class="main-subcontainer-1 flex">
+                     <div class="msb-img-container">
+                        <img src="/assests/clear.png" alt="Clear" id="weather-image">
+                     </div>
+                     <div class="msb-text-container">
+                        <h1><span id="temperature">22</span>&#xb0;C</h1>
+                        <h2 id="location">Bangluru</h2>
+                     </div>
+                </div>
+                <div class="msb-lower-cont flex">
+                    <img src="/assests/humidity.png" alt="">
+                    <div class="msb-lower-cont-text">
+                        <p><span id="humidity">53</span>%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="msb-lower-cont flex">
+                    <img src="/assests/wind.png" alt="">
+                    <div class="msb-lower-cont-text">
+                        <p><span id="wind-speed">56.66</span>Km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/efb0f636f4.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
