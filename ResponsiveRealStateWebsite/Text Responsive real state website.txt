@@ -95,7 +95,7 @@ Message Now
 
 ========== SUBSCRIBE ==========
 .subscribe__title
-Get Started with Holux
+Get Started with UrbanNest
 
 .subscribe__description
 Subscribe and find super attractive price
